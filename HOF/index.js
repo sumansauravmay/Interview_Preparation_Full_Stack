@@ -15,7 +15,6 @@ console.log(b);
 // output:[ false, false, true ]
 */
 
-
 /*
 const a = [1, 2, 3]
 const b = a.filter(ele=>ele*2)
@@ -29,10 +28,6 @@ const b = a.forEach(ele=>ele>2)
 console.log(b);
 // output: undefined
 */
-
-
-
-
 
 /*
 // find even number
@@ -138,6 +133,33 @@ let flatternArray = flatArray.reduce((acc, val) => {
 console.log(flatternArray);
 //output: [1, 2, 5, 7, 3,4, 3, 7, 9, 2,5]
 */
+
+/*
+// Find: This return the calue when it is found.
+// Find the first value greater than 3
+let element = [2, 3, 4, 6];
+let findEl = element.find((el) => {
+  return el > 3;
+});
+console.log(findEl);
+*/
+
+
+/*
+// return element whose id is 5
+let el = [
+  { id: 2, name: "Suman" },
+  { id: 3, name: "Suman" },
+  { id: 5, name: "Saurav" },
+];
+let findElemtn = el.find((element) => {
+  return element.id === 5;
+});
+console.log(findElemtn);
+*/
+
+
+
 
 
 
