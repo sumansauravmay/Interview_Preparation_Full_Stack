@@ -283,8 +283,6 @@ console.log(arr);
 // Output : [-1, 2, 10]
 */
 
-
-
 /*
 const arr = [11, 0, '', false, 2, 1];
 const filtered = arr.filter(Boolean);
@@ -303,7 +301,6 @@ if(y){
 }
 // Output : 10
 */
-
 
 /*
 const obj = {
@@ -335,7 +332,6 @@ console.log(lastName);
 //Output : dighe
 */
 
-
 /*
 const person = {
   firstName: 'Surbhi',
@@ -350,6 +346,66 @@ var a = 10;
 let a = 20;
 console.log(a)
 //Output : SyntaxError: Identifier 'a' has already been declared
+*/
+
+/*
+const arr = ["A","B","C","D","E"]
+console.log(Object.keys(arr)); 
+//output: [ '0', '1', '2', '3', '4' ]
+*/
+
+/*
+function modify(obj) {
+    obj.name = "Updated";
+}
+let person = { name: "Original" };
+modify(person);
+console.log(person.name);
+
+// function reassign(obj) {
+//     obj = { name: "New Object" };
+// }
+// reassign(person);
+console.log(person.name); 
+*/
+
+/*
+let a={ x:1, y: {alpha:10,beta:20} };
+let b = {...a};
+b.x=101;
+b.y.alpha=1001;
+console.log(a.x);
+console.log(a.y.alpha);
+// Output : First console log will output "1". Second console log will output "1001".
+*/
+
+/*
+console.log('Start');
+setTimeout(() => {
+  console.log('setTimeout');
+}, 0);
+Promise.resolve().then(() => {
+  console.log('Promise');
+});
+console.log('End');
+// Output : The console will output in this order -> Start, End, Promise, setTimeout
+*/
+
+/*
+var array = [1,2,3,4,5];
+delete array[2];
+console.log(array.length);
+// Output: 5( "delete" removes the element but does not reindex the array or change its length. It leaves undefined holes in the array)
+*/
+
+
+/*
+let x = ["a", "b", "c"];
+let y = ["a", "b", "c"];
+let z = y;
+console.log(x == y); // false(Different memory location)
+console.log(z == y); // true(Same memory location)
+console.log(z == x); // false(Different memory location)
 */
 
 
