@@ -137,5 +137,20 @@
 //   acc[item.id] = item.info.name;
 //   return acc;
 // }, {});
-
 // console.log(obj);
+
+/*
+// find all element in the array
+let flatArray = [[1, 2], [5, 7], [3, 4], 3, 7, 9, [2, [5, 9]]];
+findArray=flatArray.flat(Infinity)
+console.log(findArray)
+// output: [1,2,5,7,3,4,3,7,9,2,5,9]
+*/
+
+/*
+// Find unique element
+let uniqueEle=[1,2,1,3,5,5,5,9];
+let findEl=[...new Set(uniqueEle)];
+console.log(findEl)
+// output: [1,2,3,5,9]
+*/
