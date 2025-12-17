@@ -155,7 +155,6 @@ console.log(person2);
 // Output : { city: 'abc', name: 'xyz', age: 21 }
 */
 
-
 /*
 console.log(5 < 6 < 7); //true(5<6 is true which is 1, 1<7 is true)
 console.log(7 > 6 > 5); //false(7>6 is true which is 1, 1>5 is false)
@@ -163,10 +162,194 @@ console.log(0 == false); // true
 console.log(1 == true); // true
 */
 
-
 /*
 console.log([11, 2, 31] + [4, 5, 6]);
 // Output : "11,2,314,5,6"(The + operator is used for both addition and string concatenation. When you try to concatenate two arrays using the + operator, the arrays are converted to strings and then concatenated together.)
+*/
+
+/*
+console.log({} == {}); // false
+console.log({} === {}); // false
+// output: They are pointing to different memory locations.
+*/
+
+/*
+let x = 5;
+let y = x++;
+console.log(y);//5
+console.log(x);//6
+*/
+
+/*
+let x = 5;
+let y = ++x;
+console.log(y);//6
+console.log(x);//6
+*/
+
+/*
+console.log('apple'.split(''));
+// Output : [ 'a', 'p', 'p', 'l', 'e' ]
+*/
+
+/*
+const arr = [2,3,5,2,8,10,5];
+console.log(arr.indexOf(5))
+// output: 2
+*/
+
+/*
+const array = [8, 18, 28, 38];
+const result = array
+  .map((element) => element + 2)
+  .filter((element) => element > 25);
+console.log(result);
+//output: [ 30, 40 ]
+*/
+
+/*
+function checkValue(value) {
+  var result = Array.isArray(value);
+  console.log(result);
+}
+checkValue([1, 2, 3]);
+//output: true
+*/
+
+/*
+function sum(a=5, b=7){
+    return a+b;
+}
+console.log(sum(undefined, 20));
+//output: 25
+*/
+
+/*
+console.log(10 + "5"); //105
+console.log("5" + 10); //510
+
+console.log(10 - "5"); //5
+console.log("5" - 10); //-5
+*/
+
+/*
+console.log(printName());
+function printName() {
+  return "Hi my name is Bob";
+}
+// Output : Hi my name is Bob
+*/
+
+/*
+console.log(printName());
+const printName = () => {
+    return "Hi my name is Bob"
+}
+// output:ReferenceError: Cannot access 'printName' before initialization
+*/
+
+/*
+function hello(){
+console.log(name);
+console.log(age);
+var name = "Alice";
+let age = 21;
+}
+hello();
+// Output : undefined, ReferenceError: can't access lexical declaration 'age' before initialization"
+*/
+
+/*
+const arr1 = [1, 2, 3];
+const arr2 = [1, 2, 3];
+const str = "1,2,3";
+console.log(arr1 == str);
+console.log(arr1 == arr2);
+// Output : true, false
+*/
+
+/*
+const a = {x : 1};
+const b = {x : 1};
+console.log(a === b);
+console.log(a.x === b.x)
+// output: false, true
+*/
+
+/*
+const arr = [10, -1, 2];
+arr.sort((a, b) => a - b);
+console.log(arr);
+// Output : [-1, 2, 10]
+*/
+
+
+
+/*
+const arr = [11, 0, '', false, 2, 1];
+const filtered = arr.filter(Boolean);
+console.log(filtered);
+// Output: [ 11, 2, 1 ]
+*/
+
+/*
+var x = 0;
+var y = 10;
+if(x){
+  console.log(x);
+}
+if(y){
+  console.log(y);
+}
+// Output : 10
+*/
+
+
+/*
+const obj = {
+var1: 1,
+var2: 2
+};
+const { var1, var2 } = obj;
+console.log(var1, var2);
+// Output : 1, 2
+*/
+
+/*
+const user = { 
+name: "Surbhi dighe", 
+country: "India" 
+};
+const { name: fullname, country } = user;
+console.log(fullname);
+console.log(name);
+// Output : Surbhi Dighe, ReferenceError: name is not defined
+*/
+
+/*
+const person = {
+  firstName: 'Surbhi',
+};
+const { lastName="dighe" } = person;
+console.log(lastName);
+//Output : dighe
+*/
+
+
+/*
+const person = {
+  firstName: 'Surbhi',
+};
+const { firstName="Henry"} = person;
+console.log(firstName);
+// Output : Surbhi(Henry is like default value)
+*/
+
+/*
+var a = 10;
+let a = 20;
+console.log(a)
+//Output : SyntaxError: Identifier 'a' has already been declared
 */
 
 
