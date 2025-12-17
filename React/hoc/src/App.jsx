@@ -1,10 +1,11 @@
 import './App.css';
+import { UserListWithData } from './components/ProductWrapComp';
 
 function App() {
 
   return (
     <>
-      <h1>Hi</h1>
+      <UserListWithData/>
     </>
   )
 }
