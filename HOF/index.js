@@ -134,8 +134,8 @@ console.log(flatternArray);
 //output: [1, 2, 5, 7, 3,4, 3, 7, 9, 2,5]
 */
 
+// Find: This return the calue when it is found and undefined if none.
 /*
-// Find: This return the calue when it is found.
 // Find the first value greater than 3
 let element = [2, 3, 4, 6];
 let findEl = element.find((el) => {
@@ -143,7 +143,6 @@ let findEl = element.find((el) => {
 });
 console.log(findEl);
 */
-
 
 /*
 // return element whose id is 5
@@ -158,6 +157,138 @@ let findElemtn = el.find((element) => {
 console.log(findElemtn);
 */
 
+// FindIndex=> Return the index of Element and return single value and -1 if not found.
+/*
+// Find the index of first element greater than 1
+let arrEle=[1,2,3,4,5,6];
+let findIndex=arrEle.findIndex((el)=>el>1);
+console.log(findIndex);
+*/
+
+/*
+// Find the index of element whose id is 1
+let users = [
+  { id: 1, name: "Suman" },
+  { id: 4, name: "Saurav" },
+  { id: 3, name: "Rahul" },
+];
+let findUserIndex = users.findIndex((el) => el.id == 1);
+console.log(findUserIndex);
+// output: 0
+*/
+
+/*
+let users = [
+  { id: 1, name: "Suman" },
+  { id: 4, name: "Saurav" },
+  { id: 3, name: "Rahul" },
+];
+let findUserIndex = users.findIndex((el) => el.id == 10);
+console.log(findUserIndex);
+// output: -1
+*/
+
+// Some: check at least one element satisfy the condition(return boolean)
+/*
+let numbers = [1, 3, 5, 7, 8];
+let checkCond=numbers.some(((el)=>{
+  return el==5;
+}));
+console.log(checkCond);
+output: true
+*/
+
+/*
+let numbers = [{id:1, name:"Suman"}, {id:2, name:"Saurav"}, {id:3, name:"Rahul"}, {id:4, name:"Neha"}, {id:5, name:"Aman"}];
+let checkCond=numbers.some(((el)=>{
+  return el.id==5;
+}));
+
+console.log(checkCond)
+output: true
+*/
+
+// Every: check all element satisfy the condition(return boolean)
+
+/*
+// check if all number are even
+let numbers = [1, 2, 3, 4, 5];
+let checkEven = numbers.every((el) => {
+  return el % 2 == 0;
+});
+console.log(checkEven);
+output: false
+*/
+
+/*
+let numbers = [
+  { id: 2, name: "Suman" },
+  { id: 4, name: "Saurav" },
+  { id: 6, name: "Rahul" },
+];
+let checkEven = numbers.every((el) => {
+  return el.id == 2 || el.id == 4 || el.id == 6;
+});
+console.log(checkEven);
+output: true
+*/
+
+/*
+let numbers = [
+  { id: 2, name: "Suman" },
+  { id: 4, name: "Saurav" },
+  { id: 6, name: "Rahul" },
+];
+let checkEven = numbers.every((el) => {
+  return el.id == 2;
+});
+console.log(checkEven);
+// output: false
+*/
+
+// sort: make the element in the ascending or descending order;
+/*
+let arrNum=[5,6,2,1,9,0];
+let sortNum=arrNum.sort((a,b)=>{
+  return a-b;
+})
+console.log(sortNum)
+*/
+
+// FlatMap: combine the map and flat method to flattern the array after mapping;
+
+/*
+let words=["hello world", "hi there", "good morning"];
+let flatternWords=words.flatMap((el)=>{
+  return el.split(" ");
+})
+console.log(flatternWords);
+// output: [ 'hello', 'world', 'hi', 'there', 'good', 'morning' ]
+*/
+
+/*
+let words=["hello world", "hi there", "good morning"];
+let flatternWords=words.flatMap((el)=>{
+  return el.split("");
+})
+
+console.log(flatternWords)
+// output: [ 'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', 'h', 'i', ' ', 't', 'h', 'e', 'r', 'e', 'g', 'o', 'o', 'd', ' ', 'm', 'o', 'r', 'n', 'i', 'n', 'g' ]
+*/
+
+/*
+let words = ["hello world", "hi there", "good morning"];
+let flatternWords = words
+  .flatMap((el) => {
+    return el.split(" ");
+  })
+  .flatMap((el) => {
+    return el.split("");
+  });
+console.log(flatternWords);
+
+// output: [ 'h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd', 'h', 'i', 't', 'h', 'e', 'r', 'e', 'g', 'o', 'o', 'd', 'm', 'o', 'r', 'n', 'i', 'n', 'g' ]
+*/
 
 
 
