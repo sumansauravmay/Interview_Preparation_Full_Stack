@@ -230,6 +230,7 @@ console.log("5" + 10); //510
 
 console.log(10 - "5"); //5
 console.log("5" - 10); //-5
+console.log("JS" - 5); //NaN
 */
 
 /*
