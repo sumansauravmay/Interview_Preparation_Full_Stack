@@ -1,6 +1,10 @@
 // return second largest number in an array
 
 let arr = [8, 2, 1, 9, 3, 7, 2];
+if (arr.length < 2) {
+  console.log("null");
+  return;
+}
 let largest = -Infinity;
 let secondLargest = -Infinity;
 
