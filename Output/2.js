@@ -11,3 +11,12 @@ output: false because
 0.2=0.2000000023444302
 sum=0.3.000000........
 */
+
+
+
+
+x = 10;
+console.log(x);
+var x;
+//output:10
+

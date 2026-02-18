@@ -17,12 +17,7 @@ console.log(NaN === NaN); //false
 
 
 
-/*
-x = 10;
-console.log(x);
-var x;
-//output:10
-*/
+
 
 
 
@@ -44,10 +39,7 @@ console.log(0 == false); // true
 console.log(1 == true); // true
 */
 
-/*
-console.log([11, 2, 31] + [4, 5, 6]);
-// Output : "11,2,314,5,6"(The + operator is used for both addition and string concatenation. When you try to concatenate two arrays using the + operator, the arrays are converted to strings and then concatenated together.)
-*/
+
 
 /*
 console.log({} == {}); // false
@@ -55,39 +47,6 @@ console.log({} === {}); // false
 // output: They are pointing to different memory locations.
 */
 
-/*
-let x = 5;
-let y = x++;
-console.log(y);//5
-console.log(x);//6
-*/
-
-/*
-let x = 5;
-let y = ++x;
-console.log(y);//6
-console.log(x);//6
-*/
-
-/*
-console.log('apple'.split(''));
-// Output : [ 'a', 'p', 'p', 'l', 'e' ]
-*/
-
-/*
-const arr = [2,3,5,2,8,10,5];
-console.log(arr.indexOf(5))
-// output: 2
-*/
-
-/*
-const array = [8, 18, 28, 38];
-const result = array
-  .map((element) => element + 2)
-  .filter((element) => element > 25);
-console.log(result);
-//output: [ 30, 40 ]
-*/
 
 /*
 function checkValue(value) {
