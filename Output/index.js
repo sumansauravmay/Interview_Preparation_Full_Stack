@@ -1,29 +1,4 @@
-/*
-const a = [1, 2, 3];
-a[7] = 6;
-console.log(a);
-// output: [ 1, 2, 3, <4 empty items>, 6 ]
-*/
 
-/*
-const obj={
-    a:1,
-    b:2
-}
-obj["k"]=5;
-console.log(obj)
-// output: { a: 1, b: 2, k: 5 }
-*/
-
-/*
-const obj={
-    a:1,
-    b:2
-}
-obj[k]=5;
-console.log(obj)
-// output: error(k is not defined)
-*/
 
 /*
 (()=>{
