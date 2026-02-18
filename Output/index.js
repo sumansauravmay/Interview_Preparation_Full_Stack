@@ -37,75 +37,6 @@ console.log(1 == true); // true
 
 
 
-
-
-
-/*
-var a = 10;
-let a = 20;
-console.log(a)
-//Output : SyntaxError: Identifier 'a' has already been declared
-*/
-
-/*
-const arr = ["A","B","C","D","E"]
-console.log(Object.keys(arr)); 
-//output: [ '0', '1', '2', '3', '4' ]
-*/
-
-/*
-function modify(obj) {
-    obj.name = "Updated";
-}
-let person = { name: "Original" };
-modify(person);
-console.log(person.name);
-
-// function reassign(obj) {
-//     obj = { name: "New Object" };
-// }
-// reassign(person);
-console.log(person.name); 
-*/
-
-/*
-let a={ x:1, y: {alpha:10,beta:20} };
-let b = {...a};
-b.x=101;
-b.y.alpha=1001;
-console.log(a.x);
-console.log(a.y.alpha);
-// Output : First console log will output "1". Second console log will output "1001".
-*/
-
-/*
-console.log('Start');
-setTimeout(() => {
-  console.log('setTimeout');
-}, 0);
-Promise.resolve().then(() => {
-  console.log('Promise');
-});
-console.log('End');
-// Output : The console will output in this order -> Start, End, Promise, setTimeout
-*/
-
-/*
-var array = [1,2,3,4,5];
-delete array[2];
-console.log(array.length);
-// Output: 5( "delete" removes the element but does not reindex the array or change its length. It leaves undefined holes in the array)
-*/
-
-/*
-let x = ["a", "b", "c"];
-let y = ["a", "b", "c"];
-let z = y;
-console.log(x == y); // false(Different memory location)
-console.log(z == y); // true(Same memory location)
-console.log(z == x); // false(Different memory location)
-*/
-
 /*
 let x; 
 console.log(x);
@@ -135,16 +66,7 @@ console.log(text);
 // Output: This is two(switch(1) means JS looks for a case that matches 1. It finds case 1 & sets text as "This is one". But there is no break, so it keeps going (falls through) into case 2 & overwrites the value.)
 */
 
-/*
-const user = {
-    name: 'Aman Bhoria!',
-    logMessage() {
-        console.log(this.name); // What is logged? 
-    }
-}; 
-setTimeout(user.logMessage, 1000);
-// Output: Undefined(We've passed the reference in setTimeout not the actual function so as a result it doesn't have the user's context while executing. To get the name we've to pass a callback like: setTimeout(() => user.logMessage(), 1000);)
-*/
+
 
 /*
 const obj1 = { a: 1, b: 2 };
