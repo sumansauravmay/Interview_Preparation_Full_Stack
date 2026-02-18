@@ -44,7 +44,13 @@ console.log(u);//6
 */
 
 
+/*
+let f = "8";
+let a = 1;
+console.log((+f)+a+1);
 
+// output: 10
+*/
 
 
 
