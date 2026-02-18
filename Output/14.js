@@ -16,3 +16,16 @@ const result = array
   .filter((element) => element > 25);
 console.log(result);
 //output: [ 30, 40 ]
+
+
+
+
+
+
+function checkValue(value) {
+  var result = Array.isArray(value);
+  console.log(result);
+}
+checkValue([1, 2, 3]);
+//output: true
+

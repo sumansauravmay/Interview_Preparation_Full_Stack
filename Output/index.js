@@ -9,17 +9,13 @@ console.log([] === []); //false
 console.log({} == {}); //false
 console.log({} === {}); //false
 
+// Note: They are pointing to different memory locations.
+
 console.log(undefined == null); //true
 console.log(undefined === null); //false
 console.log(NaN == NaN); //false
 console.log(NaN === NaN); //false
 */
-
-
-
-
-
-
 
 
 /*
@@ -41,147 +37,8 @@ console.log(1 == true); // true
 
 
 
-/*
-console.log({} == {}); // false
-console.log({} === {}); // false
-// output: They are pointing to different memory locations.
-*/
 
 
-/*
-function checkValue(value) {
-  var result = Array.isArray(value);
-  console.log(result);
-}
-checkValue([1, 2, 3]);
-//output: true
-*/
-
-/*
-function sum(a=5, b=7){
-    return a+b;
-}
-console.log(sum(undefined, 20));
-//output: 25
-*/
-
-/*
-console.log(10 + "5"); //105
-console.log("5" + 10); //510
-
-console.log(10 - "5"); //5
-console.log("5" - 10); //-5
-console.log("JS" - 5); //NaN
-*/
-
-/*
-console.log(printName());
-function printName() {
-  return "Hi my name is Bob";
-}
-// Output : Hi my name is Bob
-*/
-
-/*
-console.log(printName());
-const printName = () => {
-    return "Hi my name is Bob"
-}
-// output:ReferenceError: Cannot access 'printName' before initialization
-*/
-
-/*
-function hello(){
-console.log(name);
-console.log(age);
-var name = "Alice";
-let age = 21;
-}
-hello();
-// Output : undefined, ReferenceError: can't access lexical declaration 'age' before initialization"
-*/
-
-/*
-const arr1 = [1, 2, 3];
-const arr2 = [1, 2, 3];
-const str = "1,2,3";
-console.log(arr1 == str);
-console.log(arr1 == arr2);
-// Output : true, false
-*/
-
-/*
-const a = {x : 1};
-const b = {x : 1};
-console.log(a === b);
-console.log(a.x === b.x)
-// output: false, true
-*/
-
-/*
-const arr = [10, -1, 2];
-arr.sort((a, b) => a - b);
-console.log(arr);
-// Output : [-1, 2, 10]
-*/
-
-/*
-const arr = [11, 0, '', false, 2, 1];
-const filtered = arr.filter(Boolean);
-console.log(filtered);
-// Output: [ 11, 2, 1 ]
-*/
-
-/*
-var x = 0;
-var y = 10;
-if(x){
-  console.log(x);
-}
-if(y){
-  console.log(y);
-}
-// Output : 10
-*/
-
-/*
-const obj = {
-var1: 1,
-var2: 2
-};
-const { var1, var2 } = obj;
-console.log(var1, var2);
-// Output : 1, 2
-*/
-
-/*
-const user = { 
-name: "Surbhi dighe", 
-country: "India" 
-};
-const { name: fullname, country } = user;
-console.log(fullname);
-console.log(name);
-// Output : Surbhi Dighe, ReferenceError: name is not defined
-*/
-
-/*
-const person = {
-  firstName: 'Surbhi',
-};
-const { lastName="dighe" } = person;
-console.log(lastName);
-//Output : dighe
-*/
-
-/*
-const person = {
-  firstName: 'Surbhi',
-};
-const { firstName="Henry"} = person;
-console.log(firstName);
-// Output : Surbhi(Henry is like default value)
-*/
 
 /*
 var a = 10;

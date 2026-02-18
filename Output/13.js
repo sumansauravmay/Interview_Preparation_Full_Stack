@@ -10,6 +10,26 @@ console.log("*"*5)
 // output: NaN
 
 
+
+function sum(a=5, b=7){
+    return a+b;
+}
+console.log(sum(undefined, 20));
+//output: 25
+
+
+/*
+console.log(10 + "5"); //105
+console.log("5" + 10); //510
+
+console.log(10 - "5"); //5
+console.log("5" - 10); //-5
+console.log("JS" - 5); //NaN
+*/
+
+
+
+/*
 let x = 5;
 let y = x++;
 console.log(y);//5
@@ -21,7 +41,7 @@ let u = 5;
 let v = ++x;
 console.log(v);//6
 console.log(u);//6
-
+*/
 
 
 
