@@ -1,14 +1,6 @@
 
 
 /*
-function name2(){
-    let a=10;
-}
-name2();
-console.log(a)//a is not defined
-*/
-
-/*
 console.log(typeof undefined); //undefined
 console.log(typeof NaN); //number
 console.log(typeof null); //object
@@ -23,12 +15,7 @@ console.log(NaN == NaN); //false
 console.log(NaN === NaN); //false
 */
 
-/*
-let arr = [1, 2, 3, 4, 5, -6, 7];
-arr.length = 0;
-console.log(arr);
-//output: []
-*/
+
 
 /*
 x = 10;
@@ -37,15 +24,7 @@ var x;
 //output:10
 */
 
-/*
-let a = { x: 1, y: 2 }
-let b = a;
-b.x = 3;
-console.log(a);
-console.log(b);
 
-// Output : { x: 3, y: 2 } { x: 3, y: 2 }
-*/
 
 /*
 for(var i = 0; i < 10; i++){
